@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: go-sample
-        image: registry.i-3.my.id:5000/devtiandicky/go-sample:secure
+        image: registry.i-3.my.id:5000/student08/go-sample:insecure
         resources:
           limits:
             memory: "128Mi"
