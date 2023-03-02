@@ -48,7 +48,7 @@ pipeline {
         }
         stage('Deploy app to Staging env') {
             steps {
-                sh('oc login --token=$CLUSTER_TKN --server=$OcpCluster')
+                sh('oc login --token=$CLUSTER_TKN --server=$OcpCluster --insecure-skip-tls-verify')
                 sh('oc project $ocpProject && oc create -f $manifestFile')
             }
         }
