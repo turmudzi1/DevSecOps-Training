@@ -66,7 +66,7 @@ metadata:
   labels:
     app: gosip-app-dev
 spec:
-  host: gosip-app-dev.apps.lab.i3datacenter.my.id 
+  host: gosip-app-student.apps.lab.i3datacenter.my.id 
   port:
     targetPort: 10007-tcp
   to:
